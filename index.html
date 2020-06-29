@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Final Web 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="p-3 mb-2 bg-dark text-white text-center mt-6">
+        <div>
+            <h1><u><b>Taller Final Web 1</u></b></h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+        
+                    <h1 class="p-3 mb-2 bg-secondary text-white text-center mt-6"><b><u>Registro</u></b></h1>
+                    <br>
+
+                    <form action="AgregarDatos.php" method="POST" class="was-validated">
+                        <div class="form-row p-3 mb-2 bg-light text-dark">
+                            <div class="form-group col-md-4">
+                                <label for="Cedula"><b><u>Cedula</u></b></label>
+                                <input type="number" class="form-control" id="Cedula" placeholder="Cedula" name="Cedula" required>
+                                <div class="invalid-feedback">
+                                    * El campo es obligatorio.
+                                </div>
+                              </div>
+                            <div class="form-group col-md-4">
+                                <label for="Nombre"><b><u>Nombre</u></b></label>
+                                <input type="text" class="form-control" id="Nombre" placeholder="First name" name="Nombre" required>
+                                <div class="invalid-feedback">
+                                    * El campo es obligatorio.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Apellido"><u><b>Apellido</u></b></label>
+                                <input type="text" class="form-control" id="Apellido" placeholder="Last name" name="Apellido" required>
+                                <div class="invalid-feedback">
+                                    * El campo es obligatorio.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="form-row p-3 mb-2 bg-white text-dark">
+                            <div class="form-group col-md-3 ">
+                                <label for="Direccion"><u><b>Direccion</u></b></label>
+                                <input type="text" class="form-control" id="Direccion" placeholder="Direccion" name="Direccion" required>
+                                <div class="invalid-feedback">
+                                    * El campo es obligatorio.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="Telefono"><u><b>Telefono</u></b></label>
+                                <input type="number" class="form-control" id="Telefono" placeholder="Telefono" name="Telefono" required>
+                                <div class="invalid-feedback">
+                                    * El campo es obligatorio.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="Fechanacimiento"><u><b>Fecha de nacimiento</u></b></label>
+                                <input type="date" class="form-control" id="Fechanacimiento" placeholder="Fecha de nacimiento" name="Fechanacimiento" required>
+                                <div class="invalid-feedback">
+                                    Fecha invalida.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="Sexo"><u><b>Sexo</u></b></label>                   
+                                <select class="form-control custom-select" id="Sexo" name="Sexo" required>
+                                    <option selected value=""> Seleccione el sexo </option>
+                                    <option value="1">Masculino</option> 
+                                    <option value="2">Femenino</option> 
+                                </select>
+                                <div class="invalid-feedback">Seleccione una opcion valida</div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row p-3 mb-2 bg-light text-dark">
+                          <div class="form-group col-md-4 ">
+                            <label for="Pais"><u><b>Pais</u></b></label>
+                            <input type="text" class="form-control" id="Pais" placeholder="Pais" name="Pais" required>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="Departamento"><u><b>Departamento</u></b></label>
+                            <input type="text" class="form-control" id="Departamento" placeholder="Departamento" name="Departamento" required>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="Ciudad"><u><b>Ciudad</u></b></label>
+                            <input type="text" class="form-control" id="Ciudad" placeholder="Ciudad" name="Ciudad" required>
+                          </div>
+
+                        </div>
+                        <div class="form-row p-3 mb-2 bg-white text-dark">
+                            <div class="form-group col-md-4">
+                              <label for="Email"><u><b>Email</u></b></label>
+                              <input type="email" class="form-control" id="Email" placeholder="email@example.com" name="Email" required>
+                              <div class="invalid-feedback">
+                                * El campo es obligatorio.
+                            </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Usuario"><u><b>Usuario</u></b></label>
+                                <input type="text" class="form-control" id="Usuario" placeholder="Usuario" name="Usuario" required>
+                                <div class="invalid-feedback">
+                                    * El campo es obligatorio.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="Password"><u><b>Contraseña</u></b></label>
+                              <input type="password" class="form-control" id="Password" placeholder="Password" name="Password" required>
+                              <div class="invalid-feedback">
+                                * El campo es obligatorio.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-6 p-3 mb-2 bg-light text-dark">
+                        <button type="submit" class="btn btn-success col-md-4" id="Registrarse" name="Registrarse"><u><b>Registrarse</u></b></button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <br>
+                    <h1 class="p-3 mb-2 bg-secondary text-white text-center mt-6"><u><b>Buscar Datos</u></b></h1>
+                    <br>
+                    
+                    <form action="BuscarDatos.php" method="POST" class="was-validated">
+                        <div class="form-row p-3 mb-2 bg-light text-dark">
+                            <div class="form-group col-md-4">
+                                <label for="Buscar_Datos"><u><b>Buscar Datos Por</u></b></label>                   
+                                    <select class="form-control custom-select" id="Buscar_Datos" name="Buscar_Datos" required>
+                                        <option selected value=""> Seleccione la opcion a buscar</option>
+                                        <option value="1">IdUsuario</option> 
+                                        <option value="2">Cedula</option>
+                                        <option value="3">Nombre</option> 
+                                        <option value="4">Correo</option> 
+                                        <option value="5">Telefono</option> 
+                                        <option value="6">Usuario</option>
+                                        <option value="7">Direccion</option>
+                                    </select>
+                            </div>
+                            
+                            <div class="form-group col-md-5 ">
+                                <label for="DatoaBuscar"><u><b>Datos a Buscar</u></b></label>
+                                <input class="form-control" id="DatoaBuscar" name="DatoaBuscar" required>
+                            </div>
+                        
+                            <div class="form-group col-md-3">
+                                <label for="Buscar"><u><b>Buscar</u></b></label><br>
+                                <button type="submit" class="btn btn-info col-md-6" id="Buscar" name="Buscar"><u><b>Buscar</u></b></button>
+                            </div> 
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <br>
+                    <h1 class="p-3 mb-2 bg-secondary text-white text-center mt-6"><u><b>Borrar - Eliminar Datos</u></b></h1>
+                    <br>
+                    
+                    <form action="BorrarDatos.php" method="POST" class="was-validated">
+                        <div class="form-row p-3 mb-2 bg-light text-dark">
+                            <div class="form-group col-md-4">
+                                <label for="Borrar_Datos"><u><b>Borrar Datos de:</u></b></label>                   
+                                    <select class="form-control custom-select" id="Borrar_Datos" name="Borrar_Datos" required>
+                                        <option selected value=""> Seleccione la opcion para borrar los datos</option>
+                                        <option value="1">Cedula</option> 
+                                        <option value="2">Nombre</option>
+                                        <option value="3">Correo</option> 
+                                        <option value="4">Telefono</option> 
+                                        <option value="5">Usuario</option> 
+                                        <option value="6">Direccion</option> 
+                                    </select>
+                            </div>
+                            
+                            <div class="form-group col-md-5">
+                                <label for="DatoaBorrar"><u><b>Datos a Borrar</u></b></label>
+                                <input class="form-control" id="DatoaBorrar" name="DatoaBorrar" required>
+                            </div>
+                        
+                            <div class="form-group col-md-3">
+                                <label for="Borrar"><u><b>Borrar - Eliminar</u></b></label><br>
+                                <button type="submit" class="btn btn-danger" id="Borrar" name="Borrar"><u><b>Borrar - Eliminar</u></b></button>
+                            </div> 
+                        </div>
+                    </form>
+                
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="p-3 mb-2 bg-dark text-white text-center mt-6">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+        <br>
+        <br>
+          <p>&copy; <u><b> Created by, JDGG - 2020 </u></b></p>
+          <p class="display-2"><u><b>Juan David Gomez Garcia</u></b></p>
+          
+                </div>
+            </div>
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
