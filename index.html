@@ -234,6 +234,103 @@
     </main>
 
 
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+        
+                    <h1 class="p-3 mb-2 bg-secondary text-white text-center mt-6"><b><u>Actualizar Datos</u></b></h1>
+                    <br>
+
+                    <form action="ActualizarDatos.php" method="POST" class="was-validated">
+                        <div class="form-row p-3 mb-2 bg-light text-dark">
+                                <div class="text-center mt-6 p-3 mb-2 bg-white text-dark">
+                                <img src="iconos/Cedula.png" alt="">
+                                <label for="Cedula"><b><u>Cedula</u></b></label>
+                                <input type="number" class="form-control" id="Cedula" placeholder="Cedula" name="Cedula" required>
+                                <div class="invalid-feedback">
+                                    * El campo es obligatorio para Actualizar la informacion.
+                                </div>
+                            </div>
+                            
+                        </div>
+            
+                        <div class="form-row p-3 mb-2 bg-white text-dark">
+                            <div class="form-group col-md-3">
+                                <img src="iconos/nombre.png" alt="">
+                                <label for="Nombre"><b><u>Nombre</u></b></label>
+                                <input type="text" class="form-control" id="Nombre" placeholder="First name" name="Nombre" required>
+                                <div class="invalid-feedback">
+                                    * Actualice el Nombre.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <img src="iconos/apellido.png" alt="">
+                                <label for="Apellido"><u><b>Apellido</u></b></label>
+                                <input type="text" class="form-control" id="Apellido" placeholder="Last name" name="Apellido" required>
+                                <div class="invalid-feedback">
+                                    * Actualice el Apellido.
+                                </div>
+                            </div>
+                            
+                            <div class="form-group col-md-4 ">
+                                <img src="iconos/direccion.png" alt="">
+                                <label for="Direccion"><u><b>Direccion</u></b></label>
+                                <input type="text" class="form-control" id="Direccion" placeholder="Direccion" name="Direccion" required>
+                                <div class="invalid-feedback">
+                                    * Actualice la Direccion.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <img src="iconos/telefono.png" alt="">
+                                <label for="Telefono"><u><b>Telefono</u></b></label>
+                                <img src="iconos/mobile.png" alt="">
+                                <input type="number" class="form-control" id="Telefono" placeholder="Telefono" name="Telefono" required>
+                                <div class="invalid-feedback">
+                                    * Actualice el Telefono.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row p-3 mb-2 bg-light text-dark">
+                            <div class="form-group col-md-4">
+                                <img src="Iconos/email.png" alt="">
+                              <label for="Email"><u><b>Email</u></b></label>
+                              <input type="email" class="form-control" id="Email" placeholder="email@example.com" name="Email" required>
+                              <div class="invalid-feedback">
+                                * Actualice el Email.
+                            </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <img src="Iconos/usuario.png" alt="">
+                                <label for="Usuario"><u><b>Usuario</u></b></label>
+                                <input type="text" class="form-control" id="Usuario" placeholder="Usuario" name="Usuario" required>
+                                <div class="invalid-feedback">
+                                    * Actualice el Usuario.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <img src="Iconos/password.png" alt="">
+                              <label for="Password"><u><b>Contraseña</u></b></label>
+                              <input type="password" class="form-control" id="Password" placeholder="Password" name="Password" required>
+                              <div class="invalid-feedback">
+                                * Actualice la Contraseña.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-6 p-3 mb-2 bg-white text-dark">
+                        <button type="submit" class="btn btn-success col-md-4" id="Actualizar" name="Actualizar"><u><b>Actualizar</u></b></button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
 
     <footer class="p-3 mb-2 bg-dark text-white text-center mt-6">
         <div class="container">

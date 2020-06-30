@@ -36,7 +36,8 @@ $operacion= new BaseDatos();
                     VALUES ('$cedula','$nombre','$apellido','$direccion','$telefono','$fecha_nacimiento',
                     '$sexo','$pais','$departamento','$ciudad','$email','$usuario','$password')";
 
-                    
+               
+
 
 
 //3. utilizar el metodo alterarBaseDatos para poder ejecutar la consulta para ello utilizamos el objeto del paso 1
